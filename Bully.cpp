@@ -7,3 +7,5 @@
 //
 
 #include "Bully.h"
+
+// function: takeMoney
