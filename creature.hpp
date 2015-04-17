@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include "inventory.hpp"
 #include "weapon.hpp"
-#include "armour.hpp"
+
 
 #include <string>
 
@@ -65,8 +65,7 @@ class Creature
 	// but not necessary. nullptr denotes that no weapon is equipped
 	Weapon* equippedWeapon;
 
-	// Armour currently equipped into each slot
-	Armour* equippedArmour[Armour::Slot::N];
+	
 
 	Creature(std::string name, int health, int str, int end, int dex, double hitRate,
 		unsigned int level = 1, std::string className = "")
@@ -79,9 +78,7 @@ class Creature
 		this->dex = dex;
 		this->hitRate = hitRate;
 		this->className = className;
-		this->equippedArmour[Armour::Slot::HEAD] = nullptr;
-		this->equippedArmour[Armour::Slot::TORSO] = nullptr;
-		this->equippedArmour[Armour::Slot::LEGS] = nullptr;
+		
 		this->equippedWeapon = nullptr;
 		this->level = level;
 		this->exp = 0;
@@ -89,9 +86,7 @@ class Creature
 
 	Creature()
 	{
-		this->equippedArmour[Armour::Slot::HEAD] = nullptr;
-		this->equippedArmour[Armour::Slot::TORSO] = nullptr;
-		this->equippedArmour[Armour::Slot::LEGS] = nullptr;
+		
 		this->equippedWeapon = nullptr;
 		this->level = 1;
 		this->exp = 0;
@@ -107,14 +102,8 @@ class Creature
 		return;
 	}
 
-	// Equip the armour into it's correct slot. A slightly more useful
-	// function!
-	void equipArmour(Armour* armour)
-	{
-		this->equippedArmour[(int)armour->slot] = armour;
-
-		return;
-	}
+	
+	
 
 	// Calculates the experience required to reach a certain level,
 	// *in total*. Really this is class specific and not object specific

@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include "item.hpp"
 #include "weapon.hpp"
-#include "armour.hpp"
+
 
 #include <list>
 #include <utility>
@@ -45,19 +45,18 @@ class Inventory
 	// element stores the quantity of the item
 	std::list<std::pair<Item*, int>> items;
 	std::list<std::pair<Weapon*, int>> weapons;
-	std::list<std::pair<Armour*, int>> armour;
+	
 
 	Inventory()
 	{
 	}
 
 	Inventory(std::list<std::pair<Item*, int>> items,
-		std::list<std::pair<Weapon*, int>> weapons,
-		std::list<std::pair<Armour*, int>> armour)
+		std::list<std::pair<Weapon*, int>> weapons)
 	{
 		this->items = items;
 		this->weapons = weapons;
-		this->armour = armour;
+		
 	}
 
 	// Remove all items from the inventory, destroying them in the process
@@ -66,7 +65,7 @@ class Inventory
 	{
 		this->items.clear();
 		this->weapons.clear();
-		this->armour.clear();
+		
 	}
 
 	// Add an item to the inventory, specified by a pointer to it
@@ -101,20 +100,7 @@ class Inventory
 		}
 		this->weapons.push_back(std::make_pair(weapon, count));
 	}
-
-	// Same as for items
-	void add_armour(Armour* armour, int count)
-	{
-		for(auto& it : this->armour)
-		{
-			if(it.first == armour)
-			{
-				it.second += count;
-				return;
-			}
-		}
-		this->armour.push_back(std::make_pair(armour, count));
-	}
+	
 
 	// Remove the specified number of items from the inventory
 	void remove_item(Item* item, int count)
@@ -149,18 +135,7 @@ class Inventory
 		});
 	}
 
-	// Same as for items
-	void remove_armour(Armour* armour, int count)
-	{
-		for(auto& it : this->armour)
-		{
-			if(it.first == armour) it.second -= count;
-		}
-		this->armour.remove_if([](std::pair<Armour*, int>& element)
-		{
-			return element.second < 1;
-		});
-	}
+	
 
 	// Merge the specified inventory with the current one, adding
 	// item quantities together if they already exist and adding the item
@@ -181,11 +156,7 @@ class Inventory
 		{
 			this->add_weapon(it.first, it.second);
 		}
-		// Do the same for the armour
-		for(auto it : inventory->armour)
-		{
-			this->add_armour(it.first, it.second);
-		}
+		
 
 		return;
 	}
@@ -225,28 +196,14 @@ class Inventory
 		return this->weapons.size();
 	}
 
-	// Same as for items
-	int print_armour(bool label = false)
-	{
-		unsigned int i = 1;
-
-		for(auto it : this->armour)
-		{
-			if(label) std::cout << i++ << ": ";
-			std::cout << it.first->name << " (" << it.second << ") - ";
-			std::cout << it.first->description << std::endl;
-		}
-
-		return this->armour.size();
-	}
+	
 
 	// Print the entire inventory; items, then weapons, then armour,
 	// but if the inventory is empty then output "Nothing"
 	void print(bool label = false)
 	{
 		if(this->items.size() == 0 &&
-			this->weapons.size() == 0 &&
-			this->armour.size() == 0)
+			this->weapons.size() == 0)
 		{
 			std::cout << "Nothing" << std::endl;
 		}
@@ -254,7 +211,7 @@ class Inventory
 		{
 			this->print_items(label);
 			this->print_weapons(label);
-			this->print_armour(label);
+			
 		}
 
 		return;

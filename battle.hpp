@@ -26,7 +26,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include "dialogue.hpp"
 #include "creature.hpp"
-#include "armour.hpp"
 #include "weapon.hpp"
 
 #include <iostream>
@@ -86,13 +85,7 @@ class Battle
 		// Damage that b will block
 		int defense = 0;
 
-		// Sum the defense values of the armour that b has equipped, and
-		// increase the defense by the summed value
-		for(int i = 0; i < Armour::Slot::N; ++i)
-		{
-			if(b->equippedArmour[i] != nullptr)
-				defense += b->equippedArmour[i]->defense;
-		}
+		
 
 		// Decrease the damage by the damage blocked, then ensure that
 		// damage is always inflicted (we do not want battles to last

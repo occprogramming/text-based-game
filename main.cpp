@@ -32,7 +32,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "atlas.hpp"
 #include "item.hpp"
 #include "weapon.hpp"
-#include "armour.hpp"
 #include "inventory.hpp"
 #include "creature.hpp"
 #include "dialogue.hpp"
@@ -51,7 +50,6 @@ int main(void)
 	std::vector<Creature> creatureAtlas;
 	std::vector<Item> itemAtlas;
 	std::vector<Weapon> weaponAtlas;
-	std::vector<Armour> armourAtlas;
 	std::vector<Area> areaAtlas;
 
 	Creature player;
@@ -60,8 +58,7 @@ int main(void)
 	buildatlas_creature(creatureAtlas);
 	buildatlas_item(itemAtlas);
 	buildatlas_weapon(weaponAtlas);
-	buildatlas_armour(armourAtlas);
-	buildatlas_area(areaAtlas, itemAtlas, weaponAtlas, armourAtlas, creatureAtlas);
+	buildatlas_area(areaAtlas, itemAtlas, weaponAtlas, creatureAtlas);
 
 	// Seed the random number generator with the system time, so the
 	// random numbers produced by rand() will be different each time
@@ -220,18 +217,6 @@ void dialogue_menu(Creature& player)
 		case 2:
 		{
 			std::cout << "Equipment\n=========\n";
-			std::cout << "Head: "
-				<< (player.equippedArmour[Armour::Slot::HEAD] != nullptr ?
-					player.equippedArmour[Armour::Slot::HEAD]->name : "Nothing")
-				<< std::endl;
-			std::cout << "Torso: "
-				<< (player.equippedArmour[Armour::Slot::TORSO] != nullptr ?
-					player.equippedArmour[Armour::Slot::TORSO]->name : "Nothing")
-				<< std::endl;
-			std::cout << "Legs: "
-				<< (player.equippedArmour[Armour::Slot::LEGS] != nullptr ?
-					player.equippedArmour[Armour::Slot::LEGS]->name : "Nothing")
-				<< std::endl;
 			std::cout << "Weapon: "
 				<< (player.equippedWeapon != nullptr ?
 					player.equippedWeapon->name : "Nothing")
@@ -239,44 +224,11 @@ void dialogue_menu(Creature& player)
 
 			int result2 = Dialogue(
 				"",
-				{"Equip Armour", "Equip Weapon", "Close"}).activate();
+				{"Equip Weapon", "Close"}).activate();
 
-			// Equipping armour
-			if(result2 == 1)
-			{
-				int userInput = 0;
-
-				// Cannot equip armour if they do not have any
-				// Print a list of the armour and retrieve the amount
-				// of armour in one go
-				int numItems = player.inventory.print_armour(true);
-				if(numItems == 0) break;
-
-				while(!userInput)
-				{
-					// Choose a piece of armour to equip
-					std::cout << "Equip which item?" << std::endl;
-					std::cin >> userInput;
-					// Equipment is numbered but is stored in a list,
-					// so the number must be converted into a list element
-					if(userInput >= 1 && userInput <= numItems)
-					{
-						int i = 1;
-
-						for(auto it : player.inventory.armour)
-						{
-							if(i++ == userInput)
-							{
-								// Equip the armour if it is found
-								player.equipArmour(it.first);
-								break;
-							}
-						}
-					}
-				}
-			}
+			
 			// Equip a weapon, using the same algorithms as for armour
-			else if(result2 == 2)
+			if(result2 == 1)
 			{
 				int userInput = 0;
 				int numItems = player.inventory.print_weapons(true);

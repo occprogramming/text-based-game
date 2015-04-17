@@ -50,17 +50,11 @@ void buildatlas_weapon(std::vector<Weapon>& atlas)
 	return;
 }
 
-void buildatlas_armour(std::vector<Armour>& atlas)
-{
-	// Armour(Name, Description, Defense, Slot)
-	atlas.push_back(Armour("Leather Cuirass", "Torso armour made of tanned hide", 4, Armour::Slot::TORSO));
 
-	return;
-}
 
 void buildatlas_area(std::vector<Area>& atlas,
 	std::vector<Item>& items, std::vector<Weapon>& weapons,
-	std::vector<Armour>& armour, std::vector<Creature>& creatures)
+	std::vector<Creature>& creatures)
 {
 	// Area definitions are somewhat more complicated:
 	atlas.push_back(Area(Dialogue(			// Standard dialogue definiton
@@ -73,9 +67,6 @@ void buildatlas_area(std::vector<Area>& atlas,
 		},
 		{
 			std::make_pair(&weapons[0], 1)	// Pair of weapon and quantity
-		},
-		{
-			std::make_pair(&armour[0], 1)	// Pair of armour and quantity
 		}),
 		{									// Creatures
 		}));
@@ -87,8 +78,6 @@ void buildatlas_area(std::vector<Area>& atlas,
 		{
 			std::make_pair(&items[0], 10),
 			std::make_pair(&items[1], 1)
-		},
-		{
 		},
 		{
 		}),
