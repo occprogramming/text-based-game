@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F0D373871AEAC2B10009ECC1 /* Bully.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D373721AEAC2B10009ECC1 /* Bully.cpp */; };
-		F0D373881AEAC2B10009ECC1 /* dialogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D373741AEAC2B10009ECC1 /* dialogue.cpp */; };
-		F0D3738A1AEAC2B10009ECC1 /* atlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D373771AEAC2B10009ECC1 /* atlas.cpp */; };
-		F0D3738B1AEAC2B10009ECC1 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D3737A1AEAC2B10009ECC1 /* Creature.cpp */; };
-		F0D3738C1AEAC2B10009ECC1 /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D3737D1AEAC2B10009ECC1 /* Inventory.cpp */; };
-		F0D3738D1AEAC2B10009ECC1 /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D3737F1AEAC2B10009ECC1 /* item.cpp */; };
-		F0D3738E1AEAC2B10009ECC1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D373811AEAC2B10009ECC1 /* main.cpp */; };
-		F0D3738F1AEAC2B10009ECC1 /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D373821AEAC2B10009ECC1 /* npc.cpp */; };
-		F0D373901AEAC2B10009ECC1 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D373841AEAC2B10009ECC1 /* Player.cpp */; };
+		F07A94651AEAC5EA0004A4CF /* atlas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A945C1AEAC5EA0004A4CF /* atlas.cpp */; };
+		F07A94661AEAC5EA0004A4CF /* Bully.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A945D1AEAC5EA0004A4CF /* Bully.cpp */; };
+		F07A94671AEAC5EA0004A4CF /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A945E1AEAC5EA0004A4CF /* Creature.cpp */; };
+		F07A94681AEAC5EA0004A4CF /* dialogue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A945F1AEAC5EA0004A4CF /* dialogue.cpp */; };
+		F07A94691AEAC5EA0004A4CF /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A94601AEAC5EA0004A4CF /* Inventory.cpp */; };
+		F07A946A1AEAC5EA0004A4CF /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A94611AEAC5EA0004A4CF /* item.cpp */; };
+		F07A946B1AEAC5EA0004A4CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A94621AEAC5EA0004A4CF /* main.cpp */; };
+		F07A946C1AEAC5EA0004A4CF /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A94631AEAC5EA0004A4CF /* npc.cpp */; };
+		F07A946D1AEAC5EA0004A4CF /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F07A94641AEAC5EA0004A4CF /* Player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,27 +31,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F07A94511AEAC5EA0004A4CF /* Bully.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bully.h; path = ../Bully.h; sourceTree = "<group>"; };
+		F07A94521AEAC5EA0004A4CF /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creature.h; path = ../Creature.h; sourceTree = "<group>"; };
+		F07A94531AEAC5EA0004A4CF /* dialogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dialogue.h; path = ../dialogue.h; sourceTree = "<group>"; };
+		F07A94541AEAC5EA0004A4CF /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = ../Inventory.h; sourceTree = "<group>"; };
+		F07A94551AEAC5EA0004A4CF /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item.h; path = ../item.h; sourceTree = "<group>"; };
+		F07A94561AEAC5EA0004A4CF /* npc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npc.h; path = ../npc.h; sourceTree = "<group>"; };
+		F07A94571AEAC5EA0004A4CF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Player.h; sourceTree = "<group>"; };
+		F07A94581AEAC5EA0004A4CF /* area.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = area.hpp; path = ../area.hpp; sourceTree = "<group>"; };
+		F07A94591AEAC5EA0004A4CF /* atlas.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = atlas.hpp; path = ../atlas.hpp; sourceTree = "<group>"; };
+		F07A945A1AEAC5EA0004A4CF /* battle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = battle.hpp; path = ../battle.hpp; sourceTree = "<group>"; };
+		F07A945B1AEAC5EA0004A4CF /* creature.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = creature.hpp; path = ../creature.hpp; sourceTree = "<group>"; };
+		F07A945C1AEAC5EA0004A4CF /* atlas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atlas.cpp; path = ../atlas.cpp; sourceTree = "<group>"; };
+		F07A945D1AEAC5EA0004A4CF /* Bully.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bully.cpp; path = ../Bully.cpp; sourceTree = "<group>"; };
+		F07A945E1AEAC5EA0004A4CF /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Creature.cpp; path = ../Creature.cpp; sourceTree = "<group>"; };
+		F07A945F1AEAC5EA0004A4CF /* dialogue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dialogue.cpp; path = ../dialogue.cpp; sourceTree = "<group>"; };
+		F07A94601AEAC5EA0004A4CF /* Inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Inventory.cpp; path = ../Inventory.cpp; sourceTree = "<group>"; };
+		F07A94611AEAC5EA0004A4CF /* item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = item.cpp; path = ../item.cpp; sourceTree = "<group>"; };
+		F07A94621AEAC5EA0004A4CF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		F07A94631AEAC5EA0004A4CF /* npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = npc.cpp; path = ../npc.cpp; sourceTree = "<group>"; };
+		F07A94641AEAC5EA0004A4CF /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../Player.cpp; sourceTree = "<group>"; };
 		F0D373681AEAC25D0009ECC1 /* text_base_game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = text_base_game; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0D373721AEAC2B10009ECC1 /* Bully.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bully.cpp; path = ../../Bully.cpp; sourceTree = "<group>"; };
-		F0D373731AEAC2B10009ECC1 /* Bully.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bully.h; path = ../../Bully.h; sourceTree = "<group>"; };
-		F0D373741AEAC2B10009ECC1 /* dialogue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dialogue.cpp; path = ../../dialogue.cpp; sourceTree = "<group>"; };
-		F0D373751AEAC2B10009ECC1 /* dialogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dialogue.h; path = ../../dialogue.h; sourceTree = "<group>"; };
-		F0D373771AEAC2B10009ECC1 /* atlas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atlas.cpp; path = ../../atlas.cpp; sourceTree = "<group>"; };
-		F0D373781AEAC2B10009ECC1 /* atlas.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = atlas.hpp; path = ../../atlas.hpp; sourceTree = "<group>"; };
-		F0D373791AEAC2B10009ECC1 /* battle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = battle.hpp; path = ../../battle.hpp; sourceTree = "<group>"; };
-		F0D3737A1AEAC2B10009ECC1 /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Creature.cpp; path = ../../Creature.cpp; sourceTree = "<group>"; };
-		F0D3737B1AEAC2B10009ECC1 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creature.h; path = ../../Creature.h; sourceTree = "<group>"; };
-		F0D3737C1AEAC2B10009ECC1 /* creature.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = creature.hpp; path = ../../creature.hpp; sourceTree = "<group>"; };
-		F0D3737D1AEAC2B10009ECC1 /* Inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Inventory.cpp; path = ../../Inventory.cpp; sourceTree = "<group>"; };
-		F0D3737E1AEAC2B10009ECC1 /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventory.h; path = ../../Inventory.h; sourceTree = "<group>"; };
-		F0D3737F1AEAC2B10009ECC1 /* item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = item.cpp; path = ../../item.cpp; sourceTree = "<group>"; };
-		F0D373801AEAC2B10009ECC1 /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item.h; path = ../../item.h; sourceTree = "<group>"; };
-		F0D373811AEAC2B10009ECC1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../main.cpp; sourceTree = "<group>"; };
-		F0D373821AEAC2B10009ECC1 /* npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = npc.cpp; path = ../../npc.cpp; sourceTree = "<group>"; };
-		F0D373831AEAC2B10009ECC1 /* npc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npc.h; path = ../../npc.h; sourceTree = "<group>"; };
-		F0D373841AEAC2B10009ECC1 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../../Player.cpp; sourceTree = "<group>"; };
-		F0D373851AEAC2B10009ECC1 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../../Player.h; sourceTree = "<group>"; };
-		F0D373861AEAC2B10009ECC1 /* area.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = area.hpp; path = ../../area.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,26 @@
 		F0D3735F1AEAC25D0009ECC1 = {
 			isa = PBXGroup;
 			children = (
+				F07A94511AEAC5EA0004A4CF /* Bully.h */,
+				F07A94521AEAC5EA0004A4CF /* Creature.h */,
+				F07A94531AEAC5EA0004A4CF /* dialogue.h */,
+				F07A94541AEAC5EA0004A4CF /* Inventory.h */,
+				F07A94551AEAC5EA0004A4CF /* item.h */,
+				F07A94561AEAC5EA0004A4CF /* npc.h */,
+				F07A94571AEAC5EA0004A4CF /* Player.h */,
+				F07A94581AEAC5EA0004A4CF /* area.hpp */,
+				F07A94591AEAC5EA0004A4CF /* atlas.hpp */,
+				F07A945A1AEAC5EA0004A4CF /* battle.hpp */,
+				F07A945B1AEAC5EA0004A4CF /* creature.hpp */,
+				F07A945C1AEAC5EA0004A4CF /* atlas.cpp */,
+				F07A945D1AEAC5EA0004A4CF /* Bully.cpp */,
+				F07A945E1AEAC5EA0004A4CF /* Creature.cpp */,
+				F07A945F1AEAC5EA0004A4CF /* dialogue.cpp */,
+				F07A94601AEAC5EA0004A4CF /* Inventory.cpp */,
+				F07A94611AEAC5EA0004A4CF /* item.cpp */,
+				F07A94621AEAC5EA0004A4CF /* main.cpp */,
+				F07A94631AEAC5EA0004A4CF /* npc.cpp */,
+				F07A94641AEAC5EA0004A4CF /* Player.cpp */,
 				F0D3736A1AEAC25D0009ECC1 /* text_base_game */,
 				F0D373691AEAC25D0009ECC1 /* Products */,
 			);
@@ -84,26 +104,6 @@
 		F0D3736A1AEAC25D0009ECC1 /* text_base_game */ = {
 			isa = PBXGroup;
 			children = (
-				F0D373721AEAC2B10009ECC1 /* Bully.cpp */,
-				F0D373731AEAC2B10009ECC1 /* Bully.h */,
-				F0D373741AEAC2B10009ECC1 /* dialogue.cpp */,
-				F0D373751AEAC2B10009ECC1 /* dialogue.h */,
-				F0D373771AEAC2B10009ECC1 /* atlas.cpp */,
-				F0D373781AEAC2B10009ECC1 /* atlas.hpp */,
-				F0D373791AEAC2B10009ECC1 /* battle.hpp */,
-				F0D3737A1AEAC2B10009ECC1 /* Creature.cpp */,
-				F0D3737B1AEAC2B10009ECC1 /* Creature.h */,
-				F0D3737C1AEAC2B10009ECC1 /* creature.hpp */,
-				F0D3737D1AEAC2B10009ECC1 /* Inventory.cpp */,
-				F0D3737E1AEAC2B10009ECC1 /* Inventory.h */,
-				F0D3737F1AEAC2B10009ECC1 /* item.cpp */,
-				F0D373801AEAC2B10009ECC1 /* item.h */,
-				F0D373811AEAC2B10009ECC1 /* main.cpp */,
-				F0D373821AEAC2B10009ECC1 /* npc.cpp */,
-				F0D373831AEAC2B10009ECC1 /* npc.h */,
-				F0D373841AEAC2B10009ECC1 /* Player.cpp */,
-				F0D373851AEAC2B10009ECC1 /* Player.h */,
-				F0D373861AEAC2B10009ECC1 /* area.hpp */,
 			);
 			path = text_base_game;
 			sourceTree = "<group>";
@@ -164,15 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D3738F1AEAC2B10009ECC1 /* npc.cpp in Sources */,
-				F0D3738B1AEAC2B10009ECC1 /* Creature.cpp in Sources */,
-				F0D3738D1AEAC2B10009ECC1 /* item.cpp in Sources */,
-				F0D373901AEAC2B10009ECC1 /* Player.cpp in Sources */,
-				F0D373871AEAC2B10009ECC1 /* Bully.cpp in Sources */,
-				F0D373881AEAC2B10009ECC1 /* dialogue.cpp in Sources */,
-				F0D3738C1AEAC2B10009ECC1 /* Inventory.cpp in Sources */,
-				F0D3738E1AEAC2B10009ECC1 /* main.cpp in Sources */,
-				F0D3738A1AEAC2B10009ECC1 /* atlas.cpp in Sources */,
+				F07A94661AEAC5EA0004A4CF /* Bully.cpp in Sources */,
+				F07A946C1AEAC5EA0004A4CF /* npc.cpp in Sources */,
+				F07A946D1AEAC5EA0004A4CF /* Player.cpp in Sources */,
+				F07A94671AEAC5EA0004A4CF /* Creature.cpp in Sources */,
+				F07A946A1AEAC5EA0004A4CF /* item.cpp in Sources */,
+				F07A94651AEAC5EA0004A4CF /* atlas.cpp in Sources */,
+				F07A946B1AEAC5EA0004A4CF /* main.cpp in Sources */,
+				F07A94691AEAC5EA0004A4CF /* Inventory.cpp in Sources */,
+				F07A94681AEAC5EA0004A4CF /* dialogue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +289,7 @@
 				F0D373711AEAC25D0009ECC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
