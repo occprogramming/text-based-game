@@ -10,16 +10,36 @@
 #define ____npc__
 
 #include "Creature.h"
+#include "dialogue.h"
 
 class Npc : public Creature
 {
-private:
-    inline Npc () {}
-    Npc (string name, Dialogue newDialogue);
-    
 public:
-    // Dialogue of the creature.
+    inline Npc () {}
+    Npc (const string& newName, const string& newType, Dialogue newDialogue, Inventory newInventory);
+	void setName(const string& newName);
+	void setType(const string& newType);
+	void setDialogue(const Dialogue& newDialogue);
+	void setInventory(const Inventory& newInventory);
+
+	string getName();
+	string getType();
+	Dialogue getDialogue();
+	Inventory getInventory();
+	
+
+    
+private:
+    // Dialogue of the npc.
     Dialogue dialogue;
+	//Inventory of the npc
+	Inventory inventory;
+	//Type of the Npc
+	charType type;
+	//Name of the npc
+	string name;
+
+
     
 };
 
