@@ -1,5 +1,5 @@
-#ifndef DIALOGUE.H
-#define DIALOGUE.H
+#ifndef DIALOGUE_H
+#define DIALOGUE_H
 
 #include <string>
 #include <vector>
@@ -18,10 +18,10 @@ public:
 	Dialogue();
     
 	// Overloaded constructor
-	Dialogue::Dialogue(const string& setUp, const string& question, const vector<string>& choices)
+	Dialogue::Dialogue(const string& setUp, const string& question, const vector<string>& choices);
     
 	// Run the dialogue
-	int activate();
+	int activate() const;
 
 private:
 

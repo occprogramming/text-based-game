@@ -29,10 +29,11 @@ Dialogue::Dialogue(const string& setUp, const string& question, const vector<str
 }
 
 
-int Dialogue::activate()
+int Dialogue::activate() const
 {
     // Output the information
-    cout << description << endl;
+	cout << setUp << endl;
+	cout << question << endl;
 
     // Output and number the choices
     for(int i = 0; i < this->choices.size(); ++i)
@@ -48,10 +49,13 @@ int Dialogue::activate()
     {
         cin >> userInput;
         // 'Valid' means within the range of numbers outputted
-        if(userInput >= 0 && userInput <= choices.size())
-        {
-            return userInput;
-        }
+		if (userInput >= 0 && userInput <= choices.size())
+		{
+			return userInput;
+		}
+		else
+			cout << "Please enter a number between 1 and "
+				 << choices.size() << endl;
     }
 
     return 0;
