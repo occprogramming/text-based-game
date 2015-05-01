@@ -1,0 +1,39 @@
+//Outcome Class Plan
+
+//It will be inside the Dialogue class, along a dialogueHandler() function
+
+    Inventory dummyInventory;
+    Dialogue teacherJohnDialogue("Teacher John: Hey Georgy, physics is an awesome subject. I love energy, work, friction, and even how water flows through our body. But there's something I don't understand...", "Why isn't the internet affected by gravity?",{"Explain why.", "Talk about Art.", "Say you don't know."});
+    Npc teacherJohn = Npc("Teacher John", teacherJohnDialogue, dummyInventory);
+    
+    //Dialogue myDialogue = teacherJohn.getDialogue();
+    
+    int choiceNumber = teacherJohn.getDialogue().activate();
+    
+    // Outcome is a class that will have different overloaded constructors.
+    // The first parameter is the type of outcome.
+    Outcome outcome1 = Outcome(Text, "I know right");
+    Outcome outcome2 = Outcome(NextRoom, currentRoom.generateNextRoom());
+    Outcome outcome3 = Outcome(Item, "text....", "Pencil");
+    
+    // Vector of pair of choice string and outcome class
+    vector<pair<string, Outcome>> choicesAndOutcomes;
+    
+    Dialogue teacherJohnDialogue("Teacher John: Hey Georgy, physics is an awesome subject. I love energy, work, friction, and even how water flows through our body. But there's something I don't understand...", "Why isn't the internet affected by gravity?", choicesAndOutcomes);
+    
+    switch (choiceNumber)
+    {
+        case 1:
+            //cout << "Because technically atoms from the...." << endl;
+            choicesAndOutcomes[0].activate();
+            break;
+        case 2:
+            //cout << "I know right... Did you know that Michaelangelo was the first..." << endl;
+            choicesAndOutcomes[1].activate();
+            break;
+        case 3:
+            //cout << "I don't know..." << endl;
+            choicesAndOutcomes[2].activate();
+            break;
+    }
+    
