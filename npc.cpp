@@ -8,17 +8,15 @@
 
 #include "npc.h"
 
-Npc::Npc(const string& newName, const string& newType, Dialogue newDialogue, Inventory newInventory) const
-{
-	name = newName;
-	type = newType;
-	inventory = newInventory;
-	dialogue = newDialogue;
-}
+Npc::Npc(){}
 
-void Npc::setName(const string& newName)
+Npc::Npc(const string& name, const string& type, Dialogue dialogue, Inventory inventory)
+//inefficient declaration of object in parameters. Forgot how to prevent initial object creation.
 {
-	name = newName;
+	this->name = name;
+	this->type = type;
+	this->inventory = inventory;
+	this->dialogue = dialogue;
 }
 
 void Npc::setType(const string& newType)
@@ -31,27 +29,12 @@ void Npc::setDialogue(const Dialogue& newDialogue)
 	dialogue = newDialogue;
 }
 
-void Npc::setInventory(const Inventory& newInventory)
-{
-	inventory = newInventory;
-}
-
-string Npc::getName()
-{
-	return name;
-}
-
-string Npc::getType()
+string Npc::getType() const
 {
 	return type;
 }
 
-Dialogue Npc::getDialogue()
+Dialogue Npc::getDialogue() const
 {
 	return dialogue;
-}
-
-Inventory Npc::getInventory()
-{
-	return inventory;
 }
