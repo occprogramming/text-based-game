@@ -15,18 +15,18 @@
 class Creature
 {
 public:
-    inline Creature() { }
+    inline Creature() {}
+	Creature(const string& newName, Inventory newInventory);
+
+	void setName(const string& newName);
+	void setInventory(const Inventory& newInventory);
+
+	string getName() const;
+	Inventory getInventory() const;
     
-    // Overloaded Constructor
-    Creature (string newName) { name = newName }
-    
-private:
-    // Name of the creature.
+protected:
     string name;
-    
-    // Items that the creature posseses.
-    Inventory inventory;
-    
+    Inventory inventory; 
 };
 
 #endif /* defined(____Creature__) */
