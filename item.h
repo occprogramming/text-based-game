@@ -43,6 +43,20 @@ public:
 
     // Constructor
     Item(string newName, string newDescription, ItemType newItemType);
+
+	// Set Item name
+	void set_Item_Name(const string& name);
+
+	// Set Item description
+	void set_Item_Description(const string& name);
+
+	// Return Item name
+	string get_Item_Name();
+
+	// Return Item description
+	string get_Item_Description();
+
+
     
 };
 
