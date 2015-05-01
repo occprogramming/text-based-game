@@ -14,30 +14,33 @@ Inventory::Inventory(list<pair<Item*, int>> newItems)
     items = newItems;
 }
 
-//// Clears the inventory.
-//void Inventory::clear()
-//{
-//    items.clear();
-//}
-//
-//// Adds an item to the inventory.
-//void Inventory::add_item(Item* item, int count = 1)
-//{
-//    // Iterate the inventory until we find the item to add.
-//    for (Item& it : items)
-//    {
-//        if (it.first == item)
-//        {
-//            // Once we find the item, we update the quantity.
-//            it.second += count;
-//            return;
-//        }
-//    }
-//    
-//    // If the item doesn't already exist in the inventory, then a
-//    // pair must be created too
-//    items.push_back(make_pair(item, count));
-//}
+// Clears the inventory.
+void Inventory::clear()
+{
+    items.clear();
+}
+
+// Adds an item to the inventory.
+void Inventory::add_item(Item* item, int count)
+{
+    // Iterate the inventory until we find the item to add.
+    list<pair<Item*, int>>::iterator it = items.begin();
+
+    bool found = false;
+    while (it != items.cend() && !found) {
+        if (it->first == item)
+        {
+            // Once we find the item, we update the quantity.
+            it->second += count;
+            found = true;
+        }
+    }
+
+    // If the item doesn't already exist in the inventory, then a
+    // pair must be created too
+    if (!found)
+        items.push_back(make_pair(item, count));
+}
 //
 //// Removes an item from the inventory.
 //void Inventory::remove_item(Item* item, int count)
