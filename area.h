@@ -3,8 +3,8 @@
 #ifndef AREA_H
 #define AREA_H
 
-#include "inventory.hpp"
-#include "dialogue.hpp"
+#include "Inventory.h"
+#include "dialogue.h"
 #include "Npc.h"
 
 #include <vector>

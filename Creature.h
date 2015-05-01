@@ -9,7 +9,7 @@
 #ifndef ____Creature__
 #define ____Creature__
 
-#include "inventory.h"
+#include "Inventory.h"
 #include "item.h"
 
 class Creature
@@ -21,12 +21,15 @@ public:
 	void setName(const string& newName);
 	void setInventory(const Inventory& newInventory);
 
+    double getHitRate();
 	string getName() const;
 	Inventory getInventory() const;
     
 protected:
     string name;
-    Inventory inventory; 
+    // Items that the creature posseses.
+    Inventory inventory;
+    
 };
 
 #endif /* defined(____Creature__) */

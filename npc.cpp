@@ -8,13 +8,11 @@
 
 #include "npc.h"
 
-Npc::Npc(){}
 
 Npc::Npc(const string& name, Dialogue dialogue, Inventory inventory)
 //inefficient declaration of object in parameters. Forgot how to prevent initial object creation.
 {
 	this->name = name;
-	this->inventory = inventory;
 	this->dialogue = dialogue;
 }
 

@@ -32,3 +32,4 @@ Inventory Creature::getInventory() const
 {
 	return inventory;
 }
+

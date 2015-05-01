@@ -10,7 +10,6 @@
 Player::Player(const string& newName, Inventory newInventory, double newMoney)
 {
 	name = newName;
-	inventory = newInventory;
 	money = newMoney;
 }
 

@@ -18,7 +18,7 @@ public:
 	Dialogue();
     
 	// Overloaded constructor
-	Dialogue::Dialogue(const string& setUp, const string& question, const vector<string>& choices);
+	Dialogue(const string& setUp, const string& question, const vector<string>& choices);
     
 	// Run the dialogue
 	int activate() const;

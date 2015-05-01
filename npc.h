@@ -10,6 +10,7 @@
 #define ____npc__
 
 #include "Creature.h"
+#include "Inventory.h"
 #include "dialogue.h"
 
 class Npc : public Creature
