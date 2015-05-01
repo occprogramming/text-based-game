@@ -26,3 +26,5 @@ Dialogue Npc::getDialogue() const
 {
 	return dialogue;
 }
+
+Npc::~Npc(){}

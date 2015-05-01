@@ -21,3 +21,5 @@ Bully::Bully(const string& newName, Dialogue newDialogue, Inventory newInventory
 {
     // nothing to do
 }
+
+Bully::~Bully(){}
