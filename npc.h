@@ -16,16 +16,13 @@ class Npc : public Creature
 {
 public:
     inline Npc () {}
-    Npc (const string& newName, const string& newType, Dialogue newDialogue, Inventory newInventory);
-	void setType(const string& newType);
+    Npc (const string& newName, Dialogue newDialogue, Inventory newInventory);
 	void setDialogue(const Dialogue& newDialogue);
 
-	string getType() const;
 	Dialogue getDialogue() const;
 
 protected:
     Dialogue dialogue;
-	string type;
 };
 
 

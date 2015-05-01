@@ -16,8 +16,8 @@ Bully::Bully()
     // nothing to do
 }
 
-Bully::Bully(const string& newName, const string& newType, Dialogue newDialogue, Inventory newInventory)
-: Npc(newName, newType, newDialogue, newInventory)
+Bully::Bully(const string& newName, Dialogue newDialogue, Inventory newInventory)
+: Npc(newName, newDialogue, newInventory)
 {
     // nothing to do
 }

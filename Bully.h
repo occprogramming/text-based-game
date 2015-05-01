@@ -18,7 +18,7 @@ class Bully : public Npc
 {
 public:
     Bully();
-    Bully(const string& newName, const string& newType, Dialogue newDialogue, Inventory newInventory);
+    Bully(const string& newName, Dialogue newDialogue, Inventory newInventory);
 private:
 };
 
