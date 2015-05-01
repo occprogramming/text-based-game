@@ -38,10 +38,9 @@
 		F07A94551AEAC5EA0004A4CF /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item.h; path = ../item.h; sourceTree = "<group>"; };
 		F07A94561AEAC5EA0004A4CF /* npc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npc.h; path = ../npc.h; sourceTree = "<group>"; };
 		F07A94571AEAC5EA0004A4CF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Player.h; sourceTree = "<group>"; };
-		F07A94581AEAC5EA0004A4CF /* area.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = area.hpp; path = ../area.hpp; sourceTree = "<group>"; };
+		F07A94581AEAC5EA0004A4CF /* area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = area.h; path = ../area.h; sourceTree = SOURCE_ROOT; };
 		F07A94591AEAC5EA0004A4CF /* atlas.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = atlas.hpp; path = ../atlas.hpp; sourceTree = "<group>"; };
 		F07A945A1AEAC5EA0004A4CF /* battle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = battle.hpp; path = ../battle.hpp; sourceTree = "<group>"; };
-		F07A945B1AEAC5EA0004A4CF /* creature.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = creature.hpp; path = ../creature.hpp; sourceTree = "<group>"; };
 		F07A945C1AEAC5EA0004A4CF /* atlas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atlas.cpp; path = ../atlas.cpp; sourceTree = "<group>"; };
 		F07A945D1AEAC5EA0004A4CF /* Bully.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bully.cpp; path = ../Bully.cpp; sourceTree = "<group>"; };
 		F07A945E1AEAC5EA0004A4CF /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Creature.cpp; path = ../Creature.cpp; sourceTree = "<group>"; };
@@ -52,7 +51,6 @@
 		F07A94631AEAC5EA0004A4CF /* npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = npc.cpp; path = ../npc.cpp; sourceTree = "<group>"; };
 		F07A94641AEAC5EA0004A4CF /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../Player.cpp; sourceTree = "<group>"; };
 		F0D373681AEAC25D0009ECC1 /* text_base_game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = text_base_game; sourceTree = BUILT_PRODUCTS_DIR; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +74,9 @@
 				F07A94551AEAC5EA0004A4CF /* item.h */,
 				F07A94561AEAC5EA0004A4CF /* npc.h */,
 				F07A94571AEAC5EA0004A4CF /* Player.h */,
-				F07A94581AEAC5EA0004A4CF /* area.hpp */,
+				F07A94581AEAC5EA0004A4CF /* area.h */,
 				F07A94591AEAC5EA0004A4CF /* atlas.hpp */,
 				F07A945A1AEAC5EA0004A4CF /* battle.hpp */,
-				F07A945B1AEAC5EA0004A4CF /* creature.hpp */,
 				F07A945C1AEAC5EA0004A4CF /* atlas.cpp */,
 				F07A945D1AEAC5EA0004A4CF /* Bully.cpp */,
 				F07A945E1AEAC5EA0004A4CF /* Creature.cpp */,
