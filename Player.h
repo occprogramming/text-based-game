@@ -15,14 +15,14 @@ class Player : public Creature
 {
 public:
     inline Player() {}
-    Player(string name, double money);
-                        
+	Player(const string& newName, Inventory newInventory, double newMoney);
+
+	void setMoney(double newMoney);
+
+	double getMoney();
 private:
     // Basically life points. Once you don't have more money, you lose.
     double money;
-    
-    // Reputation points. DISABLED FOR THE MOMENT.
-    //int popularity;
     
     };
     
