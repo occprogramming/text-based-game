@@ -29,7 +29,7 @@ public:
                     // level, get a special item, or start a puzzle.
                     // Note: This type of item stays with you for the
                     // rest of the game.
-    }
+    };
 
     // Name of the item. Example: "Math Notebook."
     string name;
