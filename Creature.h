@@ -24,6 +24,8 @@ public:
     double getHitRate();
 	string getName() const;
 	Inventory getInventory() const;
+
+	~Creature();
     
 protected:
     string name;

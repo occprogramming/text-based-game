@@ -7,6 +7,14 @@
 //
 
 #include "Creature.h"
+
+/*
+Creature::Creature()
+{
+	name = "";
+	//add default inventory
+}
+*/
 Creature::Creature(const string& newName, Inventory newInventory)
 {
 	name = newName;
@@ -32,4 +40,6 @@ Inventory Creature::getInventory() const
 {
 	return inventory;
 }
+
+Creature::~Creature(){}
 
