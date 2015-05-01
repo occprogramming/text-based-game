@@ -65,16 +65,10 @@
     <ClInclude Include="..\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\area.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\atlas.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\battle.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\creature.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

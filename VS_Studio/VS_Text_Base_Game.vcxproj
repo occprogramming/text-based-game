@@ -82,12 +82,10 @@
     <ClCompile Include="..\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\area.hpp" />
     <ClInclude Include="..\atlas.hpp" />
     <ClInclude Include="..\battle.hpp" />
     <ClInclude Include="..\Bully.h" />
     <ClInclude Include="..\Creature.h" />
-    <ClInclude Include="..\creature.hpp" />
     <ClInclude Include="..\dialogue.h" />
     <ClInclude Include="..\Inventory.h" />
     <ClInclude Include="..\item.h" />
