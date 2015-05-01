@@ -23,7 +23,7 @@ public:
 	string getType() const;
 	Dialogue getDialogue() const;
 
-private:
+protected:
     Dialogue dialogue;
 	string type;
 };
