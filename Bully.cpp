@@ -7,3 +7,17 @@
 //
 
 #include "Bully.h"
+
+
+// function: takeMoney
+
+Bully::Bully()
+{
+    // nothing to do
+}
+
+Bully::Bully(const string& newName, const string& newType, Dialogue newDialogue, Inventory newInventory)
+: Npc(newName, newType, newDialogue, newInventory)
+{
+    // nothing to do
+}
