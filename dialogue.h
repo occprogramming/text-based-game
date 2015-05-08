@@ -62,11 +62,9 @@ public:
 	// Overloaded constructor
 	Dialogue(const string& setUp, const string& question, const vector<string>& choices);
     
-	// Run the dialogue
-	int activate() const;
-    
-    
-    void handler(int choiceNumber);
+    // Runs the dialogue.
+    void activate() const;
+
 
 private:
 
@@ -76,12 +74,21 @@ private:
     // Question
     string question;
     
-	// A vector of choices that will be outputted. No numbering is
-	// necessary, the dialogue does that automatically
-	vector<string> choices;
-    
     // Vector of pair of choice string and outcome class
     vector<pair<string, Outcome>> choicesAndOutcomes;
+    
+    // A vector of choices that will be outputted. No numbering is
+    // necessary, the dialogue does that automatically
+    // NEED TO IMPLEMENT choicesAndOutcomes instead
+    vector<string> choices;
+    
+    // PRIVATE FUNCTIONS
+    
+    // Outputs the setUp and question to the screen, asks the user for a choice, and outputs it.
+    int getChoiceFromUser() const;
+    
+    // Handles the choice the user inputs.
+    void handler(int choiceNumber) const;
 
 };
 

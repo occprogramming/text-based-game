@@ -28,11 +28,17 @@ Dialogue::Dialogue(const string& setUp, const string& question, const vector<str
     this->choices = choices;
 }
 
+void Dialogue::activate() const
+{
+    // Runs the handler (which runs the corresponding outcome from the choice).
+    handler(getChoiceFromUser());
+}
 
-int Dialogue::activate() const
+
+int Dialogue::getChoiceFromUser() const
 {
     // Output the information
-	cout << setUp << endl;
+    cout << setUp << endl << endl;
 	cout << question << endl;
     cout << endl;
 
@@ -62,36 +68,38 @@ int Dialogue::activate() const
     return 0;
 }
 
-void Dialogue::handler(int choiceNumber)
+void Dialogue::handler(int choiceNumber) const
 {
     switch (choiceNumber)
     {
         case 1:
-            cout << "Because technically atoms from the...." << endl;
+            cout << "Math Teacher: ...and I had kept a hammer my uncle Bill gifted me for my 8th birthday, and oh boy! ..." << endl;
             //choicesAndOutcomes[0].activate();
             break;
         case 2:
-            cout << "I know right... Did you know that Michaelangelo was the first..." << endl;
+            cout << "Math Teacher: Oh, I'm sorry Georgy. You must have things to do." << endl << "I will see you later!" << endl;
             //choicesAndOutcomes[1].activate();
             break;
         case 3:
-            cout << "I don't know..." << endl;
+            cout << "You: Sorry professor, but I really have to go." << endl;
+            //choicesAndOutcomes[2].activate();
+            break;
+        case 4:
+            cout << "You successfully terminated the conversation without saying a word." << endl;
             //choicesAndOutcomes[2].activate();
             break;
     }
 }
 
 
-Outcome::Outcome()
-{
-    
-}
+// OUTCOME
 
-Outcome::Outcome(OutcomeType outcomeType) : outcomeType(outcomeType) {}
+Outcome::Outcome() {}
+
+Outcome::Outcome(OutcomeType outcomeType) : outcomeType(outcomeType)    {}
 
 Outcome::Outcome(OutcomeType outcomeType, const string& textToDisplay)
-    : outcomeType(outcomeType), outcomeParameter(textToDisplay)
-{}
+    : outcomeType(outcomeType), outcomeParameter(textToDisplay)         {}
 
 void Outcome::printType()
 {
