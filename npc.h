@@ -21,6 +21,8 @@ public:
 	void setDialogue(const Dialogue& newDialogue);
 
 	Dialogue getDialogue() const;
+    
+    ~Npc();
 
 protected:
     Dialogue dialogue;
