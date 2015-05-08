@@ -87,14 +87,15 @@ Outcome::Outcome()
     
 }
 
+Outcome::Outcome(OutcomeType outcomeType) : outcomeType(outcomeType) {}
+
 Outcome::Outcome(OutcomeType outcomeType, const string& textToDisplay)
-{
-    
-}
+    : outcomeType(outcomeType), outcomeParameter(textToDisplay)
+{}
 
 void Outcome::printType()
 {
-    
+    cout << outcomeType;
 }
 
 #endif /* DIALOGUE_CPP */
