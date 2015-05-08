@@ -34,6 +34,7 @@ int Dialogue::activate() const
     // Output the information
 	cout << setUp << endl;
 	cout << question << endl;
+    cout << endl;
 
     // Output and number the choices
     for(int i = 0; i < this->choices.size(); ++i)
@@ -61,6 +62,39 @@ int Dialogue::activate() const
     return 0;
 }
 
+void Dialogue::handler(int choiceNumber)
+{
+    switch (choiceNumber)
+    {
+        case 1:
+            cout << "Because technically atoms from the...." << endl;
+            //choicesAndOutcomes[0].activate();
+            break;
+        case 2:
+            cout << "I know right... Did you know that Michaelangelo was the first..." << endl;
+            //choicesAndOutcomes[1].activate();
+            break;
+        case 3:
+            cout << "I don't know..." << endl;
+            //choicesAndOutcomes[2].activate();
+            break;
+    }
+}
 
+
+Outcome::Outcome()
+{
+    
+}
+
+Outcome::Outcome(OutcomeType outcomeType, const string& textToDisplay)
+{
+    
+}
+
+void Outcome::printType()
+{
+    
+}
 
 #endif /* DIALOGUE_CPP */
