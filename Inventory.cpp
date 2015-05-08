@@ -64,41 +64,45 @@ void Inventory::remove_item(Item* item, int count)
     // loop stops working
     items.remove_if([](pair<Item*, int>& element)
     {
-                              return element.second < 1;
+        return element.second < 1;
     });
 }
-//
-//// Adds all items from another inventory.
-//void Inventory::merge(Inventory* inventory)
-//{
-//    // Check if we're merging to the same inventory
-//    if(inventory != this)
-//    {
-//        // Loop through the items to be added, and add them. Our addition
-//        // function will take care of everything else for us
-//        for(Item it : inventory->items)
-//            add_item(it.first, it.second);
-//    }
-//}
-//
-//// Print the entire inventory. If it's empty, prints "Nothing."
-//void Inventory::print(bool label = false)
-//{
-//    
-//    if (items.size() == 0)
-//        cout << "Nothing" << endl;
-//    else
-//    {
-//        unsigned int i = 1;
-//        
-//        for(Item it : items)
-//        {
-//            // Number the items if asked
-//            if (label) cout << i++ << ": ";
-//            // Output the item name, quantity and description, e.g.
-//            // Gold Piece (29) - Glimmering discs of wealth
-//            cout << it.first->name << " (" << it.second << ") - ";
-//            cout << it.first->description << endl;
-//        }
-//    }
-//}
+
+// Adds all items from another inventory.
+void Inventory::merge(Inventory* inventory)
+{
+    // Check if we're merging to the same inventory
+    if(inventory != this)
+    {
+        // Loop through the items to be added, and add them. Our addition
+        // function will take care of everything else for us
+        list<pair<Item*, int>>::const_iterator it = inventory->items.cbegin();
+        while (it != inventory->items.cend()) {
+            add_item(it->first, it->second);
+            ++it;
+        }
+    }
+}
+
+// Print the entire inventory. If it's empty, prints "Nothing."
+void Inventory::print(bool label)
+{
+    
+    if (items.size() == 0)
+        cout << "Nothing" << endl;
+    else
+    {
+        unsigned int i = 1;
+
+        list<pair<Item*, int>>::const_iterator it = items.cbegin();
+        while (it != items.cend()) {
+            // Number the items if asked
+            if (label) cout << i++ << ": ";
+            // Output the item name, quantity and description, e.g.
+            // Gold Piece (29) - Glimmering discs of wealth
+            cout << it->first->name << " (" << it->second << ") - ";
+            cout << it->first->description << endl;
+            it++;
+        }
+    }
+}
