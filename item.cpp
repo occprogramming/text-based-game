@@ -39,3 +39,13 @@ string Item::get_Item_Description()
 {
 	return description;
 }
+
+bool Item::operator>(const Item& otherItem) const
+{
+    return (name > otherItem.name);
+}
+
+bool Item::operator<(const Item& otherItem) const
+{
+    return (name < otherItem.name);
+}

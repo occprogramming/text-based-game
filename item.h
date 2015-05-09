@@ -56,6 +56,9 @@ public:
 	// Return Item description
 	string get_Item_Description();
 
+    bool operator>(const Item&) const;
+    bool operator<(const Item&) const;
+
 
     
 };
