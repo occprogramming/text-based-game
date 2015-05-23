@@ -20,7 +20,7 @@ public:
     Npc (const string& newName, Dialogue newDialogue, Inventory newInventory);
 	void setDialogue(const Dialogue& newDialogue);
 
-	Dialogue getDialogue() const;
+	void runDialogue() const;
     
     ~Npc();
 

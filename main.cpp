@@ -52,9 +52,7 @@ int main(void)
     
     Npc mathTeacher = Npc("Math Teacher", mathTeacherDialogue, emptyInventory);
     
-    // HERE...
-    mathTeacher.getDialogue().activate();
-    // we want it to run in this way
+    mathTeacher.runDialogue();
 
 	return 0;
 }

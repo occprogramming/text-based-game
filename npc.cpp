@@ -22,9 +22,9 @@ void Npc::setDialogue(const Dialogue& newDialogue)
 }
 
 
-Dialogue Npc::getDialogue() const
+void Npc::runDialogue() const
 {
-	return dialogue;
+    dialogue.activate();
 }
 
 Npc::~Npc(){}
